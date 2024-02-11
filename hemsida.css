@@ -1,0 +1,280 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('Bakgrund.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+	
+}
+a{
+	color : rgb(255, 251, 0);
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	
+	
+
+}
+
+.Loggan {
+	position: fixed; 
+    	z-index: 9999; /* Använder för att få loggan längst fram*/
+	margin-right: 75%;
+	top:0;
+	width: 15%;
+	cursor: pointer;
+}
+.meny-rectangle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    color: rgb(255, 251, 0);
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Justerar innehållet till vänster */
+    margin-left: -2%;
+    
+}
+
+.meny-item-Hem,
+.meny-item-Meny,
+.meny-item-Lunch,
+.meny-item-Avhamtning,
+.meny-item-Omoss,
+.meny-item-Kontakt {
+
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%; /* Justera avståndet mellan menyobjekten */
+}
+
+
+.long-content {
+
+	height: 300vh; /* Lägger till innehåll för scrollbarhet */
+	background-image: url(B.jpg); 
+	position: absolute; /* Absolut positionering för att undvika överlappning */
+    	top: 100%;
+    	width: 100%;
+	
+    }
+.khaki-rectangle {
+
+	position: absolute;
+	top:100%;
+	left: 5%;
+	right:5%;
+	height: 300vh; /* Justera höjden efter behov */
+	background-color: rgb(255, 190, 93);
+
+}
+.PizzaBild,
+.Pastabild,
+.Saladbild,
+.Hamburgarebild,
+.Kebabbild,
+.Barnmenybild {
+	cursor: pointer;
+	position:relative;
+	left: 5%;
+	top: 8%;
+	width: 30%; 
+	flex-grow: 5%;	
+	margin: 0%; /*avstånd mellan bilderna */
+	
+}
+
+.Yellow-rectangle {
+	position: absolute;
+	border-radius: 10%;
+    	top: 38%;
+    	left: 35% ;
+    	width: 28%;
+    	height: 2%;
+    	background-color: rgb(255, 238, 0);
+
+}
+.centered-text {
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	color: aliceblue;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4vw;/* använde istället för pixlar så texten inte kapas av och blir mindre istället.*/
+	transform: translate(-50%, -50%);
+}
+.PizzaPastahamburgare-text {
+	text-align: center;
+	position: absolute;
+	top: 43%; 
+	left: 50%;
+	color: aliceblue;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1vw;
+	transform: translate(-50%, -50%);
+}
+.Öppettider-text {
+	
+	text-align: center;
+	position: absolute;
+	top: 50%; 
+	color: aliceblue;
+}
+    
+.Öppettider-text h1 {
+	font-size: 2vw;
+	font-weight: bold;
+}
+    
+.Öppettider-text ul {
+	list-style-type: none;
+	padding: 0;
+}
+    
+.Öppettider-text li {
+	font-size: 1.5vw;
+	margin-top: 5%; 
+}
+.StorMeny-text {
+	text-align: center;
+	position: absolute;
+	top: 5%; 
+	left: 50%;
+	color: rgb(255, 248, 248);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5vw;
+	transform: translate(-50%, -50%);
+
+}
+.Kontakt-text {
+	
+	position: absolute;
+	text-align: center;
+	margin-top: min(13%); 
+	top: 20%;
+	left:25%;
+	right: 25%;
+	color: rgb(29, 29, 29);
+	
+}
+.Kontakt-text h1 {
+	margin-top: 25%;
+	font-size: 3vw;
+	font-weight: bold;
+}
+.Kontakt-text h2{
+	font-size: 5vw;
+	margin-top: 0%;
+
+}
+
+.Kontakt-text h3{
+	font-size: 2vw;
+	margin-top: 3%;
+
+}
+.Karta {
+	width: 100%;
+}
+.med {
+	width: 50%;
+}
+/*-----------------------------------------------------------------*/
+				/*Meny */
+/* ----------------------------------------------------------------*/
+.image-container {
+	display: flex;
+	flex-direction: column; /* Lägger till bilder vertikalt */
+	align-items: center; /* Centrerar bilderna horisontellt */
+	margin-top: 17%; 
+}
+    
+.image-container img {
+	width: 100%; 
+	max-width: 1000px; 
+	margin-bottom: 5%; 
+}
+
+/*-----------------------------------------------------------------*/
+				/*Lunch */
+/* ----------------------------------------------------------------*/
+.menu-container {
+	width: 65%;
+	margin: 10% auto;
+	background-color: #FEDFA8;
+	border: 2px solid #000000;
+	border-radius: 5%;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+    
+.menu-container h1 {
+	text-align: center;
+	color: #333333;
+}
+    
+.menu-list {
+	font-family: 'Montserrat', sans-serif;
+	list-style-type: none;
+	padding: 0;
+}
+    
+.menu-list li {
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+    
+.menu-list li a {
+	text-decoration: none;
+	color: #141414;
+	font-size: 18px;
+}
+    
+.menu-list li a:hover {
+	color: #ff4500; /* ändrar färgen vid hovring */
+}
+.meny-rectangle :hover {
+	color: #ff4500
+}
+
+
+/*-----------------------------------------------------------------*/
+				/*Kontakt */
+/* ----------------------------------------------------------------*/
+
+.kontakt-container h1 {
+	top:5%;
+	text-align: center;
+	color: #ffffff;
+}
+
+.Kontakt-container {
+	width: 45%;
+	margin: 10% auto;
+	background-color: hsl(0, 0%, 18%,0.7);
+	border: 3px solid #000000;
+	color: #ffea00;
+	border-radius: 5%;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 90%; /* ändrar storlek på skrivfält längd*/
+    padding: 1%; /* höjd  på skrivfält*/
+    margin-bottom: 3%;
+}
