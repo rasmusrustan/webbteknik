@@ -206,6 +206,11 @@ a{
 	max-width: 1000px; 
 	margin-bottom: 5%; 
 }
+@media print {
+    .meny-rectangle {
+        display: none; /* Döljer menyn vid utskrift */
+    }
+}
 
 /*-----------------------------------------------------------------*/
 				/*Lunch */
