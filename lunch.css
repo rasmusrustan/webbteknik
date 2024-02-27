@@ -1,0 +1,88 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('Bakgrund.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh; /* 100vh motsvarar höjden på användarens skärm */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	color : rgb(255, 251, 0);
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	
+
+}
+.Loggan {
+	position: fixed; /* Krävs för att använda z-index */
+    	z-index: 9999;
+	margin-right: 75%;
+	top:0;
+	width: 15%;
+	cursor: pointer;
+}
+.meny-rectangle {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	background-color: black;
+	color: rgb(255, 251, 0);
+	padding: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; /* Justera innehållet till vänster */
+	margin-left: -2%;
+	
+}
+.meny-item-Hem,
+.meny-item-Meny,
+.meny-item-Lunch,
+.meny-item-Avhamtning,
+.meny-item-Omoss,
+.meny-item-Kontakt {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%; /* Justera avståndet mellan menyobjekten */
+}
+.menu-container {
+	width: 65%;
+	margin: 10% auto;
+	background-color: hwb(38 66% 0%);
+	border: 2px solid #000000;
+	border-radius: 5%;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+    
+    h1 {
+	text-align: center;
+	color: #333333;
+    }
+    
+    .menu-list {
+	font-family: 'Montserrat', sans-serif;
+	list-style-type: none;
+	padding: 0;
+    }
+    
+    .menu-list li {
+	margin-bottom: 3%;
+	margin-top: 3%;
+    }
+    
+    .menu-list li a {
+	text-decoration: none;
+	color: #141414;
+	font-size: 18px;
+    }
+    
+    .menu-list li a:hover {
+	color: #ff4500; /* ändrar färgen vid hovring */
+    }

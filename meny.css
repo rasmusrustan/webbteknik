@@ -1,0 +1,67 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('Bakgrund.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh; /* 100vh motsvarar höjden på användarens skärm */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	color : rgb(255, 251, 0);
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+	
+
+}
+.Loggan {
+	position: fixed; /* Krävs för att använda z-index */
+    	z-index: 9999;
+	margin-right: 75%;
+	top:0;
+	width: 15%;
+	cursor: pointer;
+}
+.meny-rectangle {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	background-color: black;
+	color: rgb(255, 251, 0);
+	padding: 1%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end; /* Justera innehållet till vänster */
+	margin-left: -2%;
+	
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column; /* Lägger till bilder vertikalt */
+	align-items: center; /* Centrerar bilderna horisontellt */
+	margin-top: 10%; /* Justera toppmarginalen efter behov */
+}
+    
+.image-container img {
+	width: 100%; /* Fyller containerbredden */
+	max-width: 1000px; /* Begränsar bredden på bilderna */
+	margin-bottom: 5%; /* Justera avståndet mellan bilderna efter behov */
+}
+
+.meny-item-Hem,
+.meny-item-Meny,
+.meny-item-Lunch,
+.meny-item-Avhamtning,
+.meny-item-Omoss,
+.meny-item-Kontakt {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1%; /* Justera avståndet mellan menyobjekten */
+}

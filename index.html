@@ -6,17 +6,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="picture_blur.js" defer></script>
+	<script>
+		$(document).ready(function(){
+		    $(".meny-item-Meny").click(function(){
+			$(".sub-menu").slideToggle("slow");
+		    });
+		});
+	</script>
 </head>
 <body>
-
-	<img src="logga.png" alt="Loggan" class = Loggan>
+	<img src="logga.png" alt="Loggan" class="Loggan">
 	
 	<div class="centered-text">
 		<h1>Golden Fork</h1>
-		
 	</div>
+	
 	<div class="Yellow-rectangle"></div>
+	
 	<div class="PizzaPastahamburgare-text">
 		<h1>Pizza,Pasta,Hamburhare</h1>
 	</div>
@@ -31,53 +39,44 @@
     		</ul>
 	</div>
 
-
 	<div class="long-content"></div>
 
 	<div class="khaki-rectangle">
-		
 		<div class="StorMeny-text">
 			<h1>Meny</h1>
 		</div>
-		
 		<a href="meny.html"><img src="mat1.png" alt="MatBild1" class="PizzaBild"></a>
 		<a href="meny.html"><img src="mat2.png" alt="MatBild2" class="Pastabild"></a>
 		<a href="meny.html"><img src="mat3.png" alt="MatBild3" class="Saladbild"></a>
 		<a href="meny.html"><img src="mat4.png" alt="MatBild4" class="Hamburgarebild"></a>
 		<a href="meny.html"><img src="mat5.png" alt="MatBild5" class="Kebabbild"></a>
 		<a href="meny.html"><img src="mat6.png" alt="MatBild6s" class="Barnmenybild"></a>
-
+		<div class="Kontakt-text">
+			<h1>Kontakta oss</h1>
+			<h2>090-19 40 40</h2>
+			<h3>Hitta oss Ålidhem Centrum, Examensvägen, 907 30 Umeå</h3>
+			<img src="Karta.png" alt="Karta" class="Karta">
+			<img src="medier.png" alt="Karta" class="med">
 			
-				<div class="Kontakt-text">
-
-					<h1>Kontakta oss</h1>
-					<h2>090-19 40 40</h2>
-					<h3>Hitta oss
-						Ålidhem Centrum, Examensvägen, 907 30 Umeå
-					</h3>
-				<img src="Karta.png" alt="Karta" class = Karta>
-				<img src="medier.png" alt="Karta" class = med>
-			
-
 			
 		</div>
-
-		
-		
-
 	</div>
+	
 	<div class="meny-rectangle">
+		
 		<div class="meny-item-Hem"><a href="index.html">Hem</a></div>
-		<div class="meny-item-Meny"><a href="meny.html">Meny</a></div>
+		<div class="meny-item-Meny">Meny</div>
+		<div class="sub-menu" style="display: none;">
+    			<ul>
+       				<li><a href="meny.html">Pizza</a></li>
+        			<li><a href="meny.html">Pasta</a></li>
+        			<li><a href="meny.html">Salad</a></li>
+    			</ul>
+</div>
 		<div class="meny-item-Lunch"><a href="lunch.html">Lunch</a></div>
 		<div class="meny-item-Avhamtning"><a href="https://www.youtube.com/">Avhämtning</a></div>
 		<div class="meny-item-Omoss"><a href="om-oss.html">Om oss</a></div>
 		<div class="meny-item-Kontakt"><a href="kontakt.html">Kontakt</a></div>
-	</div>
-
-	
-	
-    
-	
+	</div>   
 </body>
 </html>

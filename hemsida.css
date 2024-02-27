@@ -44,6 +44,7 @@ a{
     justify-content: flex-end; /* Justerar innehållet till vänster */
     margin-left: -2%;
     
+    
 }
 
 .meny-item-Hem,
@@ -56,7 +57,7 @@ a{
     cursor: pointer;
     font-size: 2vw;
     font-family: 'Montserrat', sans-serif;
-    margin-left: 1%; /* Justera avståndet mellan menyobjekten */
+    margin-left: 1%; 
 }
 
 
@@ -184,13 +185,31 @@ a{
 	font-size: 2vw;
 	margin-top: 3%;
 
-}
+}	
 .Karta {
 	width: 100%;
 }
 .med {
 	width: 50%;
+}    
+.text-block1,
+.text-block2 {
+    padding: 5%; 
+    font-size: 3vw; 
 }
+.fade-text1,
+.fade-text2{
+	top: 10%;
+	width: 25%;
+	height: 15%;
+	font-size: 3vw;
+}
+.sub-menu ul {
+	font-size: 2vw; 
+	list-style-type: none; 
+	padding: 0; 
+    }
+
 /*-----------------------------------------------------------------*/
 				/*Meny */
 /* ----------------------------------------------------------------*/
@@ -207,10 +226,10 @@ a{
 	margin-bottom: 5%; 
 }
 @media print {
-    .meny-rectangle {
-        display: none; /* Döljer menyn vid utskrift */
+	.meny-rectangle {
+	    display: none; /* Döljer menyn vid utskrift */
+	}
     }
-}
 
 /*-----------------------------------------------------------------*/
 				/*Lunch */
@@ -282,4 +301,14 @@ textarea {
     width: 90%; /* ändrar storlek på skrivfält längd*/
     padding: 1%; /* höjd  på skrivfält*/
     margin-bottom: 3%;
+}
+/*-----------------------------------------------------------------*/
+				/*Om oss */
+/* ----------------------------------------------------------------*/
+td {
+	transition: color 0.5s;
+}
+    
+.red-text {
+	color: red; 
 }
